@@ -1,4 +1,4 @@
-# fri.jl
+# Fri.jl
 
 This repository contains a simple [Julia](https://julialang.org) implementation of the feature relevance bounds method. 
 
@@ -8,14 +8,14 @@ This is mostly a proof of concept and is missing features such as cross validati
 # Quickstart
 A runnable example is included in the example notebook.
 ```julia
-include("fri/src/fri.jl")
+include("src/Fri.jl")
 ```
 
     ┌ Info: Precompiling JuMP [4076af6c-e467-56ae-b986-b466b2749572]
     └ @ Base loading.jl:1273
     ┌ Info: Precompiling ECOS [e2685f51-7e38-5353-a97d-a921fd2c8199]
     └ @ Base loading.jl:1273
-    Main.fri
+    Main.Fri
 
 
 
@@ -23,12 +23,12 @@ We generate dataset with 200 samples, 5 strongly relevant features, 4 weakly rel
 
 
 ```julia
-X,y = Main.fri.dataset.generate(200,d_rel=5,d_irrel=10,d_weak=4);
+X,y = Main.Fri.dataset.generate(200,d_rel=5,d_irrel=10,d_weak=4);
 ```
 
 
 ```julia
-relev_bounds = Main.fri.relevance_bounds(X,y)
+relev_bounds = Main.Fri.relevance_bounds(X,y)
 ```
 
 

@@ -1,4 +1,4 @@
-module fri
+module Fri
 include("dataset.jl")
 using JuMP
 using ECOS
