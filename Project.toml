@@ -1,7 +1,7 @@
 name = "Fri"
 uuid = "46a35dea-4a1c-47d3-b78b-20459e72ba5a"
 authors = ["Lukas Pfannschmidt <lukas@lpfann.me>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 ECOS = "e2685f51-7e38-5353-a97d-a921fd2c8199"
